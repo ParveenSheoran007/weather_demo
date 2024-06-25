@@ -7,7 +7,6 @@ import 'package:weather_demo/constant/constantWidget.dart';
 import 'package:weather_demo/constant/constant_text_field.dart';
 import 'package:weather_demo/constant/shimmer.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -19,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   @override
   late WeatherProvider weatherProvider;
   @override
-  void initState() {
+  void initState(){
     weatherProvider = Provider.of<WeatherProvider>(context,listen: false);
     featchWeather();
     super.initState();
@@ -335,3 +334,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
